@@ -18,8 +18,8 @@ def minOperations(n: int) -> int:
             body += body
         else:
             #we only do paste what is in clipboard
-            op += 1
+            op_count += 1
             body += nextt
-        if len(body) != n:
-            return 0
-        return op_count
+    if len(body) != n:
+        return 0
+    return op_count
